@@ -1,18 +1,37 @@
 footer{
     background-color: #F8F9FA;
-    margin-top: 50px;
+    padding: 70px 0;
     .footer_div{
-        margin-top: 60px;
-        cursor: pointer;
-        .all-span{
-            color: $black_color;
-            transition: .3s linear;
-            &:hover{
-                color: black;
+        h4{
+            font-size: 16px;
+            color: #000;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+        .footer_lists{
+            li{
+                color: rgba(0, 0, 0, 0.5);
+                margin-bottom: 10px;
+                transition: .3s linear;
+                &:hover{
+                    color: black;
+                }
             }
         }
-        .fa-brands{
-            border: 1px;
+
+
+
+
+
+    }
+    .icons{
+        display: flex;
+        gap: 5px;
+        li{
+            @extend %center;
+            width: 30px;
+    height: 30px;
             padding: 7px 7px;
             border-radius: 50%;
             background-color: #00C4A8;
@@ -20,17 +39,7 @@ footer{
             &:hover{
                 background-color: #49f8dd;
             }
-    
-        }
-        .fa-solid{
-            border: 1px;
-            padding: 7px 7px;
-            border-radius: 50%;
-            background-color: #00C4A8;
-            transition: .3s linear;
-            &:hover{
-                background-color: #49f8dd;
-            }
+
         }
     }
     .fa-heart{

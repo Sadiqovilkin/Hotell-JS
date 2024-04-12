@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-nav .call_us .tel_icon {
+footer .icons li, nav .call_us .tel_icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,37 +154,36 @@ nav .call_us span {
 
 footer {
   background-color: #F8F9FA;
-  margin-top: 50px;
+  padding: 70px 0;
 }
-footer .footer_div {
-  margin-top: 60px;
-  cursor: pointer;
+footer .footer_div h4 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
 }
-footer .footer_div .all-span {
-  color: #000000;
+footer .footer_div .footer_lists li {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
   transition: 0.3s linear;
 }
-footer .footer_div .all-span:hover {
+footer .footer_div .footer_lists li:hover {
   color: black;
 }
-footer .footer_div .fa-brands {
-  border: 1px;
+footer .icons {
+  display: flex;
+  gap: 5px;
+}
+footer .icons li {
+  width: 30px;
+  height: 30px;
   padding: 7px 7px;
   border-radius: 50%;
   background-color: #00C4A8;
   transition: 0.3s linear;
 }
-footer .footer_div .fa-brands:hover {
-  background-color: #49f8dd;
-}
-footer .footer_div .fa-solid {
-  border: 1px;
-  padding: 7px 7px;
-  border-radius: 50%;
-  background-color: #00C4A8;
-  transition: 0.3s linear;
-}
-footer .footer_div .fa-solid:hover {
+footer .icons li:hover {
   background-color: #49f8dd;
 }
 footer .fa-heart {
