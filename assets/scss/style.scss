@@ -1,5 +1,8 @@
-@import 'base/reset';
+@import 'utilits/links';
 @import 'partial/variables';
+@import 'partial/extend';
+@import 'base/reset';
 @import 'layout/navbar';
+@import 'components/pageBanner';
 @import 'pages/home';
 @import 'layout/footer';

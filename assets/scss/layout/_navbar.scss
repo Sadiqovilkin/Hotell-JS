@@ -1,0 +1,58 @@
+nav{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    .logo{
+        a{
+            font-size: 24px;
+    font-weight: 700;
+            color: $white_color;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        li{
+            list-style: none;
+            a{
+                font-size: 14px;
+                padding: 10px 10px;
+                color: #ffffff50;
+                transition: .3s all ease;
+                &:hover{
+                    color: $white_color;
+                }
+            }
+        }
+    }
+
+    .call_us{
+        display: flex;
+        align-items: center;
+        .tel_icon{
+            width: 40px;
+            height: 40px;
+            @extend %center;
+            border-radius: 50%;
+            line-height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-right: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: .3s all ease;
+            &:hover{
+                background-color: transparent;
+                border-color: white;
+            }
+        }
+        span{
+            font-size: 14px;
+            font-weight: 400px;
+            line-height: 21px;
+            color: $white_color;
+        }
+    }
+}

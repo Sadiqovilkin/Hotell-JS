@@ -1,0 +1,39 @@
+footer{
+    background-color: #F8F9FA;
+    margin-top: 50px;
+    .footer_div{
+        margin-top: 60px;
+        cursor: pointer;
+        .all-span{
+            color: $black_color;
+            transition: .3s linear;
+            &:hover{
+                color: black;
+            }
+        }
+        .fa-brands{
+            border: 1px;
+            padding: 7px 7px;
+            border-radius: 50%;
+            background-color: #00C4A8;
+            transition: .3s linear;
+            &:hover{
+                background-color: #49f8dd;
+            }
+    
+        }
+        .fa-solid{
+            border: 1px;
+            padding: 7px 7px;
+            border-radius: 50%;
+            background-color: #00C4A8;
+            transition: .3s linear;
+            &:hover{
+                background-color: #49f8dd;
+            }
+        }
+    }
+    .fa-heart{
+        color: red;
+    }
+} 
