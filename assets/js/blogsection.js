@@ -62,7 +62,7 @@ function AddBlogs() {
         const newBlog = new Blogs (el.title , el.Imgsrc)
         blogs.push(newBlog)
     })
-    console.log("salam");
+    // console.log("salam");
     
     renderData(blogs)
     

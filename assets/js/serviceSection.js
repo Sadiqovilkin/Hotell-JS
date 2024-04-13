@@ -76,7 +76,7 @@ const serviceCard6 = new Service(
 );
 // add array with Data
 const sliderCardArray = [serviceCard1,serviceCard2,serviceCard3,serviceCard4,serviceCard5,serviceCard6];
-console.log(sliderCardArray);
+// console.log(sliderCardArray);
 
 //Buttons
 addBtn.addEventListener("click", (e) => {
