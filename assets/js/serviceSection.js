@@ -100,7 +100,7 @@ showAll.addEventListener('click', (e) => {
     renderServices(sliderCardArray);
 });
 
-// Youtubedan baxmisam basa dusmemisem tam olaraq 
+// Youtubedan baxmisam
 nextBtn.addEventListener("click", () => {
     const itemWidth = services.querySelector('.slider_item').offsetWidth;
     services.scrollBy({ left: itemWidth, behavior: "smooth" });
