@@ -46,11 +46,11 @@ const BlogData = [
 
 // Youtubedan yazmisam  
 blognextBtn.addEventListener("click", () => {
-    const itemWidth = SliderContain.querySelector('.cards').offsetWidth;
+    const itemWidth = SliderContain.querySelector('.blogCards').offsetWidth;
     SliderContain.scrollBy({ left: itemWidth, behavior: "smooth" });
 });
 blogprevBtn.addEventListener("click", () => {
-    const itemWidth = SliderContain.querySelector('.cards').offsetWidth;
+    const itemWidth = SliderContain.querySelector('.blogCards').offsetWidth;
     
     SliderContain.scrollBy({ left: -itemWidth, behavior: "smooth" });
 });
@@ -73,12 +73,12 @@ function renderData(blogsArr) {
     blogsArr.forEach(element => {
         
         SliderContain.innerHTML += `
-    <div class="cards">
+    <div class="blogCards">
     <div>
                 <div class="card_image">
                     <img src="${element.imgSrc}" alt="">
                     <div class="card_content">
-                        <span class="iconPencil" data-id="${element.id}"><i class="fa-solid fa-pencil" ></i></span>
+                        <span class="iconPencilBlog" data-id="${element.id}"><i class="fa-solid fa-pencil" ></i></span>
                         <h3>${element.title}</h3>
                         <a href="">read more</a>
                     </div>
@@ -87,8 +87,8 @@ function renderData(blogsArr) {
             </div>
     `
     });
-    function openEditModal(params) {
-        const editBtn = document.querySelectorAll(".iconPencil")
+    function openEditModal() {
+        const editBtn = document.querySelectorAll(".iconPencilBlog")
         editBtn.forEach(btn =>{
             btn.addEventListener("click",()=>{
                 const editedBlogs = blogsArr.find(editblog => editblog.id == btn.getAttribute("data-id"))
@@ -115,6 +115,7 @@ function renderData(blogsArr) {
                     editBtn.addEventListener('click',()=>{
                         editedBlogs.title = inp.value
                         console.log(editedBlogs.title);
+                        blogs.push(editedBlogs)
                         renderData(blogs)
                     })
 

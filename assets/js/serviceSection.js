@@ -138,6 +138,7 @@ function renderServices(array) {
 
 
 function renderServiceData(element) {
+    cardDeleted()
     return `
     <div class="slider_item">
     <div class="cards text-start w-100">
@@ -152,12 +153,13 @@ function renderServiceData(element) {
     <span>${element.created_at}</span>
     <div class="d-flex links">
     <a href="" class="learn-more-btn" data-id="${element.id}">Learn more</a>
-    <a href="#" class="del" data-id="${element.id}">Delete</a>
+    <button  class="del" data-id="${element.id}">Delete</button>
     </div>
     </div>
     </div>
     </div>
     `;
+    
     
 }
 function addService() {
@@ -199,12 +201,11 @@ function cardDeleted() {
     const deleteBtns = document.querySelectorAll(".del");
     deleteBtns.forEach(delBtns => {
         // console.log(delBtns);
-        delBtns.addEventListener("click", function () {
-
+        delBtns.addEventListener("click", function (e) {
+        e.preventDefault()
             Swal.fire({
                 title: "Are you sure?",
                 text: "You won't be able to revert this!",
-                icon: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#3085d6",
                 cancelButtonColor: "#d33",

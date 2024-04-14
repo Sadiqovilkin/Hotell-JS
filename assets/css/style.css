@@ -191,6 +191,7 @@ nav .call_us span {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  text-align: center;
 }
 #pageBanner .bannerText button {
   padding: 17px 30px;
@@ -412,6 +413,7 @@ nav .call_us span {
   color: #fff;
   padding: 5px 15px 20px 15px;
   border-radius: 20px;
+  border: none;
 }
 #services .slider-container .slider-list .slider_item img {
   display: block;
@@ -630,53 +632,53 @@ nav .call_us span {
   scrollbar-width: none;
   transition: 0.4s;
 }
-#blogSection .blog_slider .container .cards {
+#blogSection .blog_slider .container .blogCards {
   padding: 15px;
   width: 440px;
   height: 100%;
   object-fit: cover;
   transition: 0.4s;
 }
-#blogSection .blog_slider .container .cards div {
+#blogSection .blog_slider .container .blogCards div {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 1400px) {
-  #blogSection .blog_slider .container .cards {
+  #blogSection .blog_slider .container .blogCards {
     width: 360px;
   }
 }
 @media (max-width: 1200px) {
-  #blogSection .blog_slider .container .cards {
+  #blogSection .blog_slider .container .blogCards {
     width: 320px;
   }
 }
 @media (max-width: 768px) {
-  #blogSection .blog_slider .container .cards {
+  #blogSection .blog_slider .container .blogCards {
     width: 270px;
   }
 }
 @media (max-width: 576x) {
-  #blogSection .blog_slider .container .cards {
+  #blogSection .blog_slider .container .blogCards {
     width: 80%;
     padding: 0;
   }
 }
-#blogSection .blog_slider .container .cards .card_image img {
+#blogSection .blog_slider .container .blogCards .card_image img {
   width: 100%;
 }
-#blogSection .blog_slider .container .cards .card_content {
+#blogSection .blog_slider .container .blogCards .card_content {
   padding: 40px 30px 30px 30px;
   background-color: #fff;
   position: relative;
 }
-#blogSection .blog_slider .container .cards .card_content h3 {
+#blogSection .blog_slider .container .blogCards .card_content h3 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 50px;
   display: block;
   color: #000;
 }
-#blogSection .blog_slider .container .cards .card_content a {
+#blogSection .blog_slider .container .blogCards .card_content a {
   bottom: 30px;
   text-transform: uppercase;
   font-size: 12px;
@@ -684,7 +686,7 @@ nav .call_us span {
   letter-spacing: 0.1rem;
   color: #888;
 }
-#blogSection .blog_slider .container .cards .iconPencil {
+#blogSection .blog_slider .container .blogCards .iconPencilBlog {
   position: absolute;
   top: -20px;
   -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
@@ -697,7 +699,7 @@ nav .call_us span {
   text-align: center;
   border-radius: 50%;
 }
-#blogSection .blog_slider .container .cards .iconPencil i {
+#blogSection .blog_slider .container .blogCards .iconPencilBlog i {
   font-size: 13px;
   width: 100%;
   height: 100%;

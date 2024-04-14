@@ -66,15 +66,15 @@ testInps.forEach(inp => {
 })
 // Functions 
 
-function AddBlogs() {
+function AddTest() {
     // console.log("test");
-    renderData(employesArr)
+    TestRenderData(employesArr)
 }
 
-function renderData(arr) {
+function TestRenderData(arr) {
     TestSliderContain.innerHTML = '' 
     arr.forEach(employeee => {
-        
+        console.log(employeee);
         TestSliderContain.innerHTML += `
         <div class="cards">
         <div class="card_desc">
@@ -128,7 +128,7 @@ function cardDeleted() {
                     if (idx !== -1) {
                         console.log("test");
                         employesArr.splice(idx, 1);
-                        renderData(employesArr);
+                        TestRenderData(employesArr);
                     }
                 Swal.fire({
                     title: "Deleted!",
@@ -155,7 +155,7 @@ function AddEmployee() {
     else{
         const newEmployeer = new Employees(testFullname.value,testposition.value,testComment.value,testImgSrc.value)
         employesArr.push(newEmployeer)
-        renderData(employesArr)
+        TestRenderData(employesArr)
         testFullname.value = ''
         testposition.value = ''
         testComment.value = ''
@@ -165,6 +165,6 @@ function AddEmployee() {
 
     
 }
-AddBlogs()
+AddTest()
 
 
