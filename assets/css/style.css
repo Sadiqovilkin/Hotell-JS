@@ -181,7 +181,7 @@ nav .call_us span {
   text-align: center;
 }
 #pageBanner .bannerText h1 {
-  color: white;
+  color: #fff;
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 3rem;
@@ -197,7 +197,7 @@ nav .call_us span {
   border-radius: 30px;
   border: none;
   background-color: #00917C;
-  color: white;
+  color: #fff;
   font-weight: 900;
   cursor: pointer;
 }

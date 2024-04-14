@@ -27,7 +27,7 @@
         text-align: center;
 
         h1 {
-            color: white;
+            color: $white_color;
             font-size: 50px;
             font-weight: 700;
             margin-bottom: 3rem;
@@ -44,7 +44,7 @@
             border-radius: 30px;
             border: none;
             background-color: #00917C;
-            color: white;
+            color: $white_color;
             font-weight: 900;
             cursor: pointer;
         }
