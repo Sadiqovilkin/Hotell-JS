@@ -31,7 +31,13 @@
                     <div class="col-8 text-center ">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Destination <i class="bi bi-chevron-down"></i></a></li>
+                            <li><a href="#">Destination <i class="bi bi-chevron-down"></i></a>
+                                <ul class="underList">
+                                    <li>Menu One</li>
+                                    <li>Menu Two</li>
+                                    <li>Menu Three</li>
+                                </ul>
+                            </li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -51,6 +57,11 @@
         </nav>
     </header>
     <main>
+        <div class="bannermodal d-none ">
+            <div class="centerDiv">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Dqs6y23BGkQ?si=pQPWo3X6iHwzDemq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
         <section id="pageBanner"
             style="background-image: url('	https://preview.colorlib.com/theme/hotell/images/img_1.jpg');">
             <div class="bacgroundImg">
@@ -59,8 +70,9 @@
             <div class="bannerText">
                 <h1>Once a year go someplace you've <br> never been before.
                 </h1>
-                <button>See video</button>
+                <button id="seeVideo">See video</button>
             </div>
+
         </section>
         <section id="services">
             <div class="container flex-column flex-lg-row">
@@ -506,6 +518,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/seeVideo.js"></script>
     <script src="assets/js/accardion.js"></script>
     <script src="assets/js/serviceSection.js"></script>
     <script src="assets/js/blogsection.js"></script>
