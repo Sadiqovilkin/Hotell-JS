@@ -219,25 +219,17 @@ nav .call_us span {
   font-weight: 400;
   font-size: 14px;
 }
+#instagramSlider .slider-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 3fr);
+  font-size: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
 #instagramSlider .instaCard {
-  width: 20%;
+  width: 300px;
   height: 300px;
   position: relative;
-}
-@media (max-width: 1024px) {
-  #instagramSlider .instaCard {
-    width: 25%;
-  }
-}
-@media (max-width: 768px) {
-  #instagramSlider .instaCard {
-    width: 50%;
-  }
-}
-@media (max-width: 400px) {
-  #instagramSlider .instaCard {
-    width: 100%;
-  }
 }
 #instagramSlider .instaCard .overlay {
   transition: 0.3s all ease;
@@ -1085,6 +1077,97 @@ nav .call_us span {
 }
 #features .custom-pagination div:hover {
   border-color: #000;
+}
+
+#contactForm {
+  padding: 7rem;
+}
+#contactForm .heading h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  color: #00917c;
+  margin-bottom: 15px;
+}
+#contactForm .heading p {
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+#contactForm .form label {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+#contactForm .form .inpDiv .form-control {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  border-color: transparent;
+  height: 52px;
+  background: #f8f9fa !important;
+}
+#contactForm .form .msgDiv textarea {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 250px;
+  border-color: transparent;
+  background: #f8f9fa !important;
+}
+#contactForm .form #sendBtn {
+  color: #fff;
+  background-color: #00917c;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border-color: none;
+  font-size: 14px;
+}
+
+#contactTable .search {
+  width: 50%;
+  margin-bottom: 15px;
+}
+#contactTable .search input {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  border-color: transparent;
+  height: 52px;
+  background: #f8f9fa !important;
+}
+#contactTable table, #contactTable tr, #contactTable th, #contactTable td {
+  border: 1px solid rgb(175, 169, 169);
+  border-collapse: collapse;
+}
+#contactTable .buttons {
+  display: flex;
+  border: none;
+  gap: 15px;
+}
+#contactTable .buttons button {
+  width: 80px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #00917c;
+}
+#contactTable .btns {
+  display: flex;
+}
+#contactTable .btns button {
+  width: 100px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #00917c;
+}
+#contactTable .btns select {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #00917c;
+}
+#contactTable .btns select option {
+  background-color: #f8f9fa;
 }
 
 footer {
